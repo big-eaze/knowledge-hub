@@ -16,7 +16,7 @@ function Nav2({navItems, subtitle}) {
       <div className={`nav-container ${displayMenu ? 'active-nav' : 'inactive-nav'}`}>
         <header className="nav-header">
           <div className="nav-title">
-            <h1>Gink Innovation</h1>
+            <h1>Knowledge HUB</h1>
             <FaTimes
               size={30}
               className="close-icon"
