@@ -1,0 +1,58 @@
+.view-results-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view-results-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.student-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.subjects-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subjects-table th,
+.subjects-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.subjects-table th {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.subjects-table td {
+  background-color: #ffffff;
+}
+
+.subjects-table tr:nth-child(even) td {
+  background-color: #f3f3f3;
+}
