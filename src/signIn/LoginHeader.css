@@ -1,0 +1,36 @@
+
+.login-head {
+  background-color: rgb(240, 172, 24);
+  padding: 20px;
+  width: 30%;
+  max-width: 500px;
+  height: 650px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.login-head h1 {
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  .login-head {
+    flex: 1;
+    height: 100vh;
+  }
+  .login-head h1 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 780px) {
+  .login-head {
+    display: none;
+  }
+}

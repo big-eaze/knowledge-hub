@@ -1,0 +1,186 @@
+.sub-staff-container {
+  width: 50%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+.filter-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-container select {
+  padding: 12px 20px;
+  outline: none;
+}
+
+.staff-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  width: 97%;
+  margin: 10px auto;
+
+}
+
+.staff-info li {
+  padding: 20px 50px;
+}
+
+
+.staff-table {
+  border-collapse: collapse;
+}
+
+.staff-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+  padding: 0.75rem;
+  font-weight: 600;
+  border: 2px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.staff-table td {
+  padding: 0.90em;
+  border: 2px solid #ddd;
+  color: #555;
+}
+
+.staff-table tr:nth-child(even) td {
+  background-color: #f3f3f3;
+}
+
+.staff-table button {
+  border: 0;
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.staff-table button:active {
+  transform: scale(0.95);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1480px) {
+  .sub-staff-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .staff-count {
+    gap: 1rem;
+
+  }
+
+  .staff-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .staff-info li {
+    width: 100%;
+    /* Full width for smaller screens */
+  }
+
+  .staff-table th,
+  .staff-table td {
+    font-size: 12px;
+    /* Reduce font size for smaller screens */
+    padding: 0.5rem;
+  }
+
+  .staff-table {
+    font-size: 8px;
+  }
+  .filter-container select {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .staff-count {
+    gap: 10px;
+  }
+
+  .staff-info li {
+    padding: 15px;
+  }
+
+  .staff-table {
+    font-size: 10px;
+  }
+
+  .staff-table th,
+  .staff-table td {
+    font-size: 10px;
+    padding: 0.4rem;
+  }
+
+  .staff-table button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .sub-ff-container {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .staff-count {
+    margin-bottom: 0.5rem;
+    padding-right: 5px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .staff-info li {
+    padding: 10px;
+  }
+
+  .filter-container select {
+    padding: 1px 7px;
+    font-size: 8px;
+  }
+
+  .staff-table th,
+  .staff-table td {
+    font-size: 8px;
+    padding: 0.09rem;
+  }
+
+  .staff-table button {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 330px) {
+  .staff-count {
+    margin-bottom: 0px;
+  }
+
+  .sub-staff-container {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .staff-table th,
+  .staff-table td {
+    padding: 0.01rem;
+  }
+}
